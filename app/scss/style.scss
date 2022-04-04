@@ -3,6 +3,90 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  padding: 50px 0;
+  &__inner{
+    @extend %rubik-medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo{
+  display: flex;
+  &__img{
+    padding-right: 15px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 58px;
+    color: $title; 
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  
+  .menu__item+.menu__item{
+    margin-left: 52px;
+  }
+  &__list-link{
+  color: $title;
+
+  }
+}
+
+.user-nav{
+  display: flex;
+  max-height: 51px;
+
+  &__link-search{
+    padding: 18px;
+    margin-right: 21px; 
+    background-color: #edf1f4;
+    border-radius: 50%;
+  }
+
+  &__inner{
+    padding: 22px 41px 12px;
+    background-color: #fcd7b6;  
+    border-radius: 25px;
+  }
+
+  .user-nav__link-heart{
+    padding-right: 30px;
+    border-right: 1px solid #fde7d3;
+
+  }
+  .user-nav__link-car{
+    padding-left: 30px
+  }
+  .user-nav__num{
+    @extend %dmsans-regular;
+    background-color: #fff;
+    font-size: 10px;
+    position: relative;
+    top: -32px;
+    left: 11px;
+    padding: 3px 4px 2px 5px;
+    border-radius: 50%;
+  }
+
+  &__link-drops{
+    padding: 15px;
+    margin-left: 18px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+  }
+
+
+  &__inner{
+    display: flex;
+  }
+}
+
 
 
 
